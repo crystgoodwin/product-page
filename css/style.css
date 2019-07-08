@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #848484;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  color: #222;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  padding: 10px;
+}
+
+p {
+  padding: 15px;
+}
+
+.navBar {
+  position: fixed;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: inline-block;
+  margin: 0;
+}
+
+#header-img {
+  max-width: 75%;
+  margin: 5px 0 0 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .5s ease;
+}
+nav ul a:hover {
+  color: #2ecc71;
+}
+nav li {
+  display: inline-block;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  nav nav ul a {
+    color: #fff;
+  }
+  nav ul {
+    background-color: #20392c;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #2ecc71 0%, #2ecc71 20%, transparent 20%, transparent 40%, #2ecc71 40%, #2ecc71 60%, transparent 60%, transparent 80%, #2ecc71 80%, #2ecc71 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+}
+
+#hero {
+  max-height: 40em;
+  min-height: 20em;
+  background-image: url("../images/banner-camera.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 6px solid #2ecc71;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.col {
+  padding: 35px;
+  text-align: center;
+  width: 33.33%;
+}
+
+/*
+.col1 {
+  width: 33.33%;
+}
+
+.col2 {
+  width: 33.33%;
+}
+
+.col3 {
+  width: 33.33%;
+}
+*/
+.col img {
+  width: 80px;
+}
+
+.vid-container {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+  background-color: #c0c0c0;
+}
+
+.btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price-box {
+  border: 1px solid #000;
+  margin: 25px 10px;
+}
+
+.btn-form {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.btn-form:hover {
+  background-color: #3e8e41;
+}
+
+input {
+  border: none;
+  padding: 10px 25px;
+}
+
+#footer {
+  background-color: #aeaeae;
+  min-height: 200px;
+  padding: 20px 10px;
+  text-align: center;
+}
